@@ -1,3 +1,6 @@
+ /*
+    CSS Style for Geek Label Company
+*/
 html, body {
     height: 100%;
     margin: 0px;
@@ -31,11 +34,6 @@ h1 {
     width: 900px;
     margin: 0 auto;
 }
-
- /*
-    CSS Style for Geek Label Company
-*/
-
  
 section {
     position: relative;
