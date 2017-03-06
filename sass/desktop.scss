@@ -1,0 +1,18 @@
+/** desktop style*/
+
+//Import variables 
+@import "common/_variables";
+@import "common/_mixins";
+
+//initializing 
+@import "_init";
+
+//Import elements  
+
+
+//Import sections
+@import "sections/_home";
+@import "sections/_design";
+@import "sections/_build";
+@import "sections/_both";
+@import "sections/_maps"; 

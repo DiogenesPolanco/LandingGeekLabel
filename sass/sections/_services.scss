@@ -1,0 +1,45 @@
+#services {
+    background-color: white;
+    a {
+        padding-top: 60px;
+        span {
+            color: #d83554;
+            position: absolute;
+            left: 50%;
+            width: 70px;
+            height: 70px;
+            margin-left: -23px;
+            border: 3px solid #39383a;
+            border-radius: 100%;
+            box-sizing: border-box;
+        }
+        span::after {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            content: '';
+            width: 16px;
+            height: 16px;
+            margin: -12px 0 0 -8px;
+            border-left: 2px solid #39383a;
+            border-bottom: 2px solid #39383a;
+            -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+            box-sizing: border-box;
+        }
+    }
+    p {
+        color: #39383a;
+        top: 80%;
+    }
+    img {
+        position: absolute;
+        top: 20%;
+        left: 30%;
+        z-index: 2;
+    }
+    h1 {
+        color: #39383a;
+        background-color: white;
+    }
+}

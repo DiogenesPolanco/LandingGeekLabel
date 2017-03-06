@@ -1,0 +1,27 @@
+#design {
+  a {
+    padding-top: 60px;
+    span {
+      color: #d83554;
+      position: absolute;
+      left: 50%;
+      width: 70px;
+      height: 70px;
+      margin-left: -23px;
+      border: 5px solid #fff;
+      border-radius: 100%;
+      box-sizing: border-box;
+      background-color: #d83554;
+    }
+  }
+  img {
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    z-index: 2;
+  }
+  p {
+    color: #39383a;
+    top: 80%;
+  }
+}

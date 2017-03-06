@@ -1,0 +1,32 @@
+#home {
+  img {
+    position: absolute;
+    top: 30%;
+    left: 44%;
+    z-index: 2;
+  }
+  a span {
+    position: absolute;
+    left: 50%;
+    width: 70px;
+    height: 70px;
+    margin-left: -23px;
+    border: 3px solid #fff;
+    border-radius: 100%;
+    box-sizing: border-box;
+  }
+  a span::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    content: '';
+    width: 16px;
+    height: 16px;
+    margin: -12px 0 0 -8px;
+    border-left: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    box-sizing: border-box;
+  }
+}
