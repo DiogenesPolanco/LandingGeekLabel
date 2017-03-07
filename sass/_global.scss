@@ -8,6 +8,32 @@
     @include border-box;
 }
 
+p {
+    color: #fff;
+    text-align: center;
+    @include font-size($p-font-sizes);
+}
+
+.parent {
+    position: relative;
+    min-height: 150px;
+    margin: 20px auto;
+}
+
+.child {
+    padding: 20px;
+    /*background-color: crimson;*/
+    &.both {
+        @include centerer;
+    }
+    &.horizontal {
+        @include centerer(true, false);
+    }
+    &.vertical {
+        @include centerer(false, true);
+    }
+}
+
 img {
     width: auto;
     max-width: 100%;
@@ -16,9 +42,7 @@ img {
 
 .img-resp {
     position: relative;
-    margin-top: -50%;
-    margin-left: -50%;
-    @include breakpoint(sm) {
+    @include breakpoint(md) {
         float: none;
         width: 100%;
     }
@@ -45,6 +69,36 @@ img {
 @media #{$breakpoint-medium} {
     .wrapper {
         width: 100%;
+    }
+    @for $i from 1 through $grid-general {
+        .top-#{$i} {
+            top: 100% / $grid-general * $i;
+        }
+    }
+    @for $i from 1 through $grid-general {
+        .bottom-#{$i} {
+            bottom: 100% / $grid-general * $i;
+        }
+    }
+    @for $i from 1 through $grid-general {
+        .margin-t-#{$i} {
+            margin-top: 100% / $grid-general * $i;
+        }
+    }
+    @for $i from 1 through $grid-general {
+        .margin-b-#{$i} {
+            margin-bottom: 100% / $grid-general * $i;
+        }
+    }
+    @for $i from 1 through $grid-general {
+        .padding-t-#{$i} {
+            padding-top: 100% / $grid-general * $i;
+        }
+    }
+    @for $i from 1 through $grid-general {
+        .padding-b-#{$i} {
+            padding-bottom: 100% / $grid-general * $i;
+        }
     }
     @for $i from 1 through $grid-columns {
         .column-#{$i} {

@@ -1,8 +1,22 @@
 //Global variables
- 
-// grid variables
-$grid-columns: 12; 
+ $breakpoints: (
+  small : 480px,
+  medium: 700px,
+  large : 1024px
+);
 
+$p-font-sizes: (
+  null  : (18px, 1.3),
+  small : 20px,
+  medium: (24px, 1.4),
+  900px : 26px,
+  large : (28px, 1.45),
+  1440px: 30px,
+);
+
+// grid variables
+$grid-columns: 12;  
+$grid-general: 12; 
 /** break points */
 $breakpoint-small: "only screen and (min-width: 20em)";
 $breakpoint-medium: "only screen and (min-width: 30em)";

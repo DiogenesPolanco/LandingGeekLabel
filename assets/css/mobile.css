@@ -35,24 +35,6 @@ section {
   width: 100%;
   height: 100%; }
   section h1 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    z-index: 2;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
     color: #fff;
     font: normal 300 64px/1 'Josefin Sans', sans-serif;
-    text-align: center;
-    white-space: nowrap; }
-  section p {
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    z-index: 2;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    color: #fff;
-    font: normal 300 34px/1 'Josefin Sans', sans-serif;
-    text-align: center;
-    white-space: nowrap; }
+    text-align: center; }
