@@ -1,0 +1,73 @@
+@import "common/variables";
+@import "common/mixins";
+*,
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    @include border-box;
+}
+
+img {
+    width: auto;
+    max-width: 100%;
+    height: auto !important;
+}
+
+.img-resp {
+    position: relative;
+    margin-top: -50%;
+    margin-left: -50%;
+    @include breakpoint(sm) {
+        float: none;
+        width: 100%;
+    }
+}
+
+.wrapper {
+    width: 100%;
+    margin: 0 auto;
+    background-color: #d83554;
+}
+
+.wrapper,
+.row {
+    @extend %clearfix;
+}
+
+[class*='column-'] {
+    float: left;
+    padding: 1em;
+    width: 100%;
+    min-height: 1px;
+}
+
+@media #{$breakpoint-medium} {
+    .wrapper {
+        width: 100%;
+    }
+    @for $i from 1 through $grid-columns {
+        .column-#{$i} {
+            width: 100% / $grid-columns * $i;
+        }
+    }
+}
+
+
+/*demo styling*/
+
+* {
+    color: #363742;
+}
+
+span {
+    display: block;
+    padding: 2em;
+    text-align: center;
+}
+
+p {
+    display: block;
+    padding: 2em;
+    text-align: center;
+}

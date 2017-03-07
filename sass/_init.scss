@@ -60,10 +60,3 @@ h1 {
  	}
  }
  
- section::after {
- 	position: absolute;
- 	left: 0;
- 	content: '';
- 	width: 100%;
- 	height: 100%;
- }

@@ -1,12 +1,8 @@
 //Global variables
+ 
+// grid variables
+$grid-columns: 12; 
 
 /** break points */
-$break-point-normal: 1050px;
-$break-point-smaller: 820px;
-$break-point-small: 640px;
-$break-point-very-small: 480px;
-$break-point-tiny: 365px;
-
-
-
-
+$breakpoint-small: "only screen and (min-width: 20em)";
+$breakpoint-medium: "only screen and (min-width: 30em)";

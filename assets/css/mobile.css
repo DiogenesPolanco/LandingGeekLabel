@@ -56,10 +56,3 @@ section {
     font: normal 300 34px/1 'Josefin Sans', sans-serif;
     text-align: center;
     white-space: nowrap; }
-
-section::after {
-  position: absolute;
-  left: 0;
-  content: '';
-  width: 100%;
-  height: 100%; }
