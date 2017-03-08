@@ -29,6 +29,20 @@ gulp.task("watch", function () {
   gulp.watch(sassFiles, ["sass"]);
 });
 
-gulp.task('serve', ["watch"],  serve('./'));
+gulp.task('copy', function () {
+  return gulp
+    .src('assets/**/*')
+    .pipe(gulp.dest('dist/assets'));
+}); 
 
-gulp.task("default", ["sass"]);
+gulp.task('html', function () {
+  return gulp
+    .src('index.html')
+    .pipe(gulp.dest('dist'));
+});
+
+gulp.task('build', ["sass", "html", "copy"]);
+
+gulp.task('serve', ["build"], serve('./dist'));
+
+gulp.task("default", ["serve"]);
