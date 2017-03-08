@@ -1,14 +1,20 @@
 #home {
- 
-  a span {   
+  background-color: #d83554;
+  p{
+        color: #fff; 
+  }
+  a span {
     width: 70px;
-    height: 70px; 
+    height: 70px;
     border: 3px solid #fff;
     border-radius: 100%;
     box-sizing: border-box;
+    display: block;
+    padding: 2em;
+    text-align: center;
   }
   a span::after {
-    position: absolute; 
+    position: absolute;
     content: '';
     width: 16px;
     height: 16px;

@@ -8,8 +8,8 @@
     @include border-box;
 }
 
-p {
-    color: #fff;
+p { 
+    color:#3b3a3c;
     text-align: center;
     @include font-size($p-font-sizes);
 }
@@ -43,15 +43,13 @@ img {
 .img-resp {
     position: relative;
     @include breakpoint(md) {
-        float: none;
-        width: 100%;
+        float: none; 
     }
 }
 
 .wrapper {
     width: 100%;
-    margin: 0 auto;
-    background-color: #d83554;
+    margin: 0 auto; 
 }
 
 .wrapper,
@@ -110,18 +108,15 @@ img {
 
 /*demo styling*/
 
-* {
-    color: #363742;
-}
+ 
 
-span {
-    display: block;
-    padding: 2em;
-    text-align: center;
-}
+
 
 p {
     display: block;
     padding: 2em;
     text-align: center;
+    span{
+          color: #d83554;
+    }
 }
