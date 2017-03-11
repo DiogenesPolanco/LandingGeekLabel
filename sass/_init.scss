@@ -1,44 +1,91 @@
-  html, body {
-    height: 100%;
-    margin: 0px;
-    padding: 0px;
-}
-body {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 14px; 
-    min-height: 100%;
-    background-color: #f0ede9; 
-}
-
-* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
-
-a, a:visited, a:active, a:hover {
-    text-decoration: none;
-    outline: none;    
-}
-
-h1 {
-    background-color: #d83554;
-    color: #fff;
-    padding: 10px;
-    margin: 0px 0px 30px 0px;
-    text-align: center;
-}
- 
- #container {
- 	width: 900px;
- 	margin: 0 auto;
- }
- 
- section {
- 	position: relative;
- 	width: 100%;
- 	height: 100%;
- 	h1 {   
- 		color: #fff;
- 		font: normal 300 64px/1 'Josefin Sans', sans-serif;
- 		text-align: center; 
- 	} 
-     
- }
- 
+  html,
+  body {
+      height: 100%;
+      margin: 0px;
+      padding: 0px;
+  }
+  
+  html,
+  body {
+      height: 100%;
+      margin: 0px;
+      padding: 0px;
+  }
+  
+  @font-face {
+      font-family: 'Museo-300';
+      src: url('../fonts/Museo 300.otf');
+  }
+  
+  @font-face {
+      font-family: 'Museo-100';
+      src: url('../fonts/Museo 100.otf');
+  }
+  
+  @font-face {
+      font-family: 'Museo Sans 100';
+      src: url('../fonts/Museo Sans 100.otf');
+  }
+  
+  body {
+      font-family: 'Museo-300';
+      font-size: 14px;
+      font-weight: lighter;
+      background-color: #f0ede9;
+  }
+  
+  * {
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+  }
+  
+  a,
+  a:visited,
+  a:active,
+  a:hover {
+      text-decoration: none;
+      outline: none;
+  }
+  
+  h1 {
+      background-color: transparent;
+      color: #FFF;
+      font-weight: lighter;
+      text-align: center;
+  }
+  
+  #container {
+      width: 900px;
+      margin: 0 auto;
+  }
+  
+  section {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-align-items: center;
+      align-items: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+       ::after {
+          position: absolute;
+          left: 0;
+          content: '';
+          width: 100%;
+          height: 100%;
+      }
+      h1 {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          z-index: 2;
+          transform: translate(-50%, -50%);
+          color: #fff;
+          background-color: transparent;
+          font: normal 300 64px/1 'Museo-300';
+          text-align: center;
+      }
+  }

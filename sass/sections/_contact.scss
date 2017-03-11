@@ -1,0 +1,93 @@
+#contact {
+    .text-center {
+        a {
+            padding-bottom: 60px;
+            span {
+                position: absolute;
+                left: 50%;
+                width: 50px;
+                height: 50px;
+                margin-left: -30px;
+                border: 3px solid #fff;
+                border-radius: 100%;
+                box-sizing: border-box;
+                background-color: #d83554;
+                bottom: 0px;
+                
+            }
+             ::after {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    content: '';
+                    width: 14px;
+                    height: 14px;
+                    margin: 100px auto;
+                    margin: -10px 0 0 -7px;
+                    border-left: 2px solid #fff;
+                    border-bottom: 2px solid #fff;
+                    -webkit-transform: rotate(-45deg);
+                    transform: rotate(-45deg);
+                    box-sizing: border-box;
+                }
+        }
+        span {
+            display: block;
+            margin-top: 20px;
+            font-size: 20px;
+            color: #39383a;
+            form {
+                color: #d83554;
+            }
+        }
+    }
+    .btn-send {
+        display: block;
+        width: 460px;
+        height: 60px;
+        margin-top: 20px;
+        padding: 12px 16px;
+        font-size: 18px;
+        border-radius: 3px;
+        color: #FFF;
+        background-color: #d83554;
+        border: 2px solid transparent;
+    }
+    h1 {
+        display: block;
+        margin-top: -300px;
+        /*top: 145px;*/
+        background-color: transparent;
+        color: #39383a;
+    }
+    .input {
+        display: block;
+        margin-top: 20px;
+        width: 460px;
+        height: 60px;
+        padding: 10px 16px;
+        font-size: 20px;
+        border-radius: 3px;
+        background-color: #FFF;
+        border: 2px solid #D2D3D9;
+    }
+    textarea {
+        resize: none;
+        display: block;
+        margin-top: 20px;
+        width: 460px;
+        height: 170px;
+        padding: 10px 16px;
+        font-size: 20px;
+        border-radius: 3px;
+        background-color: #FFFFff;
+        border: 2px solid #D2D3D9;
+    }
+    select {
+        .input {
+            background-color: #dff0d8;
+            height: 46px;
+            line-height: 46px;
+        }
+    }
+}

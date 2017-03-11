@@ -8,12 +8,6 @@
     @include border-box;
 }
 
-p { 
-    color:#3b3a3c;
-    text-align: center;
-    @include font-size($p-font-sizes);
-}
-
 .parent {
     position: relative;
     min-height: 150px;
@@ -43,13 +37,13 @@ img {
 .img-resp {
     position: relative;
     @include breakpoint(md) {
-        float: none; 
+        float: none;
     }
 }
 
 .wrapper {
     width: 100%;
-    margin: 0 auto; 
+    margin: 0 auto;
 }
 
 .wrapper,
@@ -108,15 +102,149 @@ img {
 
 /*demo styling*/
 
- 
+header {
+    width: 100%;
+    height: 100%;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    background-color: #d83554;
+}
 
-
-
-p {
-    display: block;
-    padding: 2em;
-    text-align: center;
-    span{
-          color: #d83554;
+section {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+     ::after {
+        position: absolute;
+        left: 0;
+        content: '';
+        width: 100%;
+        height: 100%;
     }
+    h1 {
+        position: absolute; 
+        left: 50%;
+        z-index: 2;
+        transform: translate(-50%, -50%);
+        color: #fff;
+        background-color: transparent;
+        font: normal 300 64px/1 'Museo-300';
+        text-align: center;
+    }
+}
+
+.text-center {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.geek {
+    a {
+        position: absolute;
+        bottom: -10px;
+        left: 50%;
+        z-index: 2;
+        display: inline-block;
+        -webkit-transform: translate(0, -50%);
+        transform: translate(0, -50%);
+        color: #fff;
+        font: normal 400 20px/1 'Museo-300';
+        letter-spacing: .1em;
+        text-decoration: none;
+        transition: opacity .3s;
+        a:hover {
+            opacity: .8;
+        }
+    }
+}
+
+.geekgray {
+    p {
+        color: #39383a;
+        top: 80%;
+        font-size: 210%;
+        text-justify: inter-word;
+        bottom: -140px;
+        position: absolute;
+        left: 50%;
+        z-index: 2;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        font: normal 300 34px/1 'Museo-300';
+        text-align: center;
+    }
+    img {
+        position: relative;
+        top: 20%;
+        width: 70%;
+        height: auto;
+        margin: auto;
+        z-index: 2;
+        top: -100px;
+    }
+    .text-center {
+        a {
+            padding-bottom: 60px;
+            span {
+                position: absolute;
+                left: 50%;
+                width: 50px;
+                height: 50px;
+                margin-left: -30px;
+                border: 3px solid #fff;
+                border-radius: 100%;
+                box-sizing: border-box;
+                background-color: #d83554;
+                bottom: 0px;
+                
+            }
+             ::after {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    content: '';
+                    width: 14px;
+                    height: 14px;
+                    margin: 100px auto;
+                    margin: -10px 0 0 -7px;
+                    border-left: 2px solid #fff;
+                    border-bottom: 2px solid #fff;
+                    -webkit-transform: rotate(-45deg);
+                    transform: rotate(-45deg);
+                    box-sizing: border-box;
+                }
+        }
+        span {
+            color: #d83554;
+        }
+    }
+}
+ 
+.ellipse {
+    position: absolute;
+    font-family: "Museo Sans Cyrl 300";
+    font-weight: 100;
+    font-size: 100px;
+    width: 120px;
+    height: 120px;
+    margin: auto;
+    margin: 40px 0 0 40px;
+    color: #FFFFFF;
+    box-sizing: border-box;
+}
+h1 {
+    background-color: #d83554;
+    color: #fff;
+    margin-top: -8%;
+    text-align: center;
 }

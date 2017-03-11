@@ -2,78 +2,120 @@
 <html>
 
 <head>
+        <link rel="icon" href="assets/favicon.ico">
     <link rel="stylesheet" type="text/css" href="/assets/css/desktop.css" />
     <link type="text/css" rel="stylesheet" media="only screen and (max-width: 600px)" href="/assets/css/mobile.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 </head>
 
 <body>
-    <section id="home" class="wrapper ">
-        <div class="row">
-            <div class="column-12 margin-t-2">
-                <div class="parent margin-b-1">
-                    <div class="child horizontal"> <img src="/assets/images/web/home/glasses.jpeg" class="img-resp" /></div>
-                </div>
-                <div class="parent">
-                    <div class="child both">
-                        <h1>Geek Label</h1>
-                        <p> A team of confessed geek who are all about great digital design.</p>
-                        <div class="child both top-12"><a href="#design"><span></span></a></div>
-                    </div>
-                </div>
-            </div>
+  <!-- Header -->
+    <header id="home" class="header">
+        <div class="text-center">
+            <img src="assets/images/web/header/logo.png" alt="Geek Label">
+            <h1>Geek Label</h1>
+            <p> A team of confessed geek who are all about <br/> great digital design</p>
+            <a href="#design"><span></span></a>
+        </div>
+    </header>
+
+     <!-- Design -->
+    <section id="design" class="geek geekgray">
+        <div class="text-center">
+            <img src="assets/images/web/content/wdesign.png" alt="Geek Design">
+            <p> Some agencies love <span>design</span>, but don't know how to build</p>
+            <a href="#build"><span></span></a>
         </div>
     </section>
-    <section id="design" class="wrapper">
-        <div class="row">
-            <div class="column-12">
-                <div class="parent margin-b-3">
-                    <div class="child horizontal"> <img src="/assets/images/web/content/wdesign.png" class="img-resp" /> </div>
-                </div>
-                <div class="parent">
-                    <div class="child both">
-                        <p> Some agencies love <span>design</span>, but dont't know how to build</p>
-                        <div class="child both top-12"><a href="#build"><span></span></a></div>
-                    </div>
-                </div>
-            </div>
+    
+    <!-- Build -->
+    <section id="build" class="geek geekgray">
+        <div class="text-center">
+            <img src="assets/images/web/content/wbuild.png" alt="Geek Design" style="max-width:auto;">
+            <p> Some agencies know hot to <span>build</span> but can't do design</p>
+            <a href="#both"><span></span></a>
         </div>
     </section>
-      <section id="build" class="wrapper">
-        <div class="row">
-            <div class="column-12">
-                <div class="parent margin-b-3">
-                    <div class="child horizontal"> <img src="/assets/images/web/content/wbuild.png" class="img-resp" /> </div>
-                </div>
-                <div class="parent">
-                    <div class="child both">
-                        <p> Some agencies know hot to <span>build</span> but can't do design</p>
-                        <div class="child both top-12"><a href="#both"><span></span></a></div>
-                    </div>
-                </div>
-            </div>
+    
+    <!-- Both -->
+    <section id="both" class="geek geekgray">
+        <div class="text-center">
+            <img src="assets/images/web/content/wboth.png" alt="Geek Design" style="max-width:auto;">
+            <p> We love <span>both</span></p>
+            <a href="#services"><span></span></a>
         </div>
     </section>
-          <section id="both" class="wrapper">
-        <div class="row">
-            <div class="column-12">
-                <div class="parent margin-b-3">
-                    <div class="child horizontal"> <img src="/assets/images/web/content/wboth.png" class="img-resp" /> </div>
-                </div>
-                <div class="parent">
-                    <div class="child both">
-                         <p> We love <span>both</span></p>
-                        <div class="child both top-12"><a href="#services"><span></span></a></div>
-                    </div>
-                </div>
+    
+    <!-- Services -->
+    <section id="services" class="geek">
+        <div class="container">
+            <h1>Services</h1>
+            <div class="services">
+                <span class="ellipse">Wd</span>
+                <p>Web Debelopment</p>
+            </div>
+            <div class="services">
+                <span class="ellipse">Dn</span>
+                <p>Design</p>
+            </div>
+            <div class="services">
+                <span class="ellipse">Aa</span>
+                <p>Branding</p>
+            </div>
+            <div class="services">
+                <span class="ellipse">Ur</span>
+                <p>UX Research</p>
             </div>
         </div>
-    </section> 
+        <a href="#clients"><span></span></a>
+    </section>
+    
+    <!-- Client -->
+    <section id="clients" class="geek">
+        <div class="container ">
+            <h1 class="padding-b-2">Clients</h1>
+            <div class="clients">
+                <img src="assets/images/web/clients/photographers.png" alt="" height="70px;">
+            </div>
+            <div class="clients">
+                <img src="assets/images/web/clients/vegan.png" alt="" height="70px;">
+            </div>
+            <div class="clients">
+                <img src="assets/images/web/clients/pshe.png" alt="" height="70px;">
+            </div>
+        </div>
+        <a href="#findus"><span></span></a>
+    </section>
+    
+    <!-- Findus -->
+    <section id="findus" class="geek">
+        <div class="text-center">
+            <h1  class=" padding-b-2" >How to find us</h1>
+            <div id="map"></div>
+            <a href="#contact"><span></span></a>
+        </div>
+    </section>
+    
+    <!-- Contact -->
+    <section id="contact">
+        <div class="text-center">  
+            <h1>Contact</h1>
+            <form action="#" name="form">
+                <input class="input" type="text" name="name" placeholder="Name">
+                <input class="input" type="email" name="email" placeholder="Email">
+                <textarea class="textarea" placeholder="Message"></textarea>
+                <button type="submit" class="btn-send" name="message" onclick="SentMessage();">Send Message!</button>
+                <span>Or phone on: 01923 220121</span>  
+            </form>
+            <!--a href="#build"><span></span></a-->
+        </div>
+    </section>
+
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="/assets/js/main.js"></script>
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD8dOa-UH3QYEzzvBZNCyMdMFSj2yJd47U"></script>
     <script type="text/javascript">
-        /*
+        
         // When the window has finished loading create our google map below
         google.maps.event.addDomListener(window, 'load', init);
 
@@ -187,7 +229,7 @@
                 map: map,
                 title: 'Snazzy!'
             });
-        }*/
+        }
     </script>
 </body>
 
